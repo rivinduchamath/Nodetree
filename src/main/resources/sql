@@ -1,0 +1,10 @@
+insert into cogdbu.Node (id, height, name, root_id, parent_id) values (1, 0, 'root', 1, null);
+insert into cogdbu.Node (id, height, name, root_id, parent_id) values (2, 1, 'a', 1, 1);
+insert into cogdbu.Node (id, height, name, root_id, parent_id) values (3, 1, 'b', 1, 1);
+insert into cogdbu.Node (id, height, name, root_id, parent_id) values (4, 2, 'ax1', 1, 2);
+insert into cogdbu.Node (id, height, name, root_id, parent_id) values (5, 2, 'ax2', 1, 2);
+insert into cogdbu.Node (id, height, name, root_id, parent_id) values (6, 2, 'ax1y1', 1, 4);
+insert into cogdbu.Node (id, height, name, root_id, parent_id) values (7, 2, 'ax1y2', 1, 4);
+insert into cogdbu.Node (id, height, name, root_id, parent_id) values (8, 2, 'ax1y3', 1, 4);
+insert into cogdbu.Node (id, height, name, root_id, parent_id) values (9, 2, 'ax2z1', 1, 5);
+insert into cogdbu.Node (id, height, name, root_id, parent_id) values (10, 2, 'bp1', 1, 3);

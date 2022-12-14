@@ -42,10 +42,10 @@ public class NodeController {
         logger.info("size of child list " + opList.size());
         Date endTime = new Date();
         logger.info(" Execution time " + (startTime.getTime() - endTime.getTime()) / 1000);
-        return processToTree(id, opList);
+        return processToTree( opList);
     }
 
-    private Map<Node, List<Node>> processToTree(long id, List<Node> opList1) {
+    private Map<Node, List<Node>> processToTree( List<Node> opList1) {
         Map<Node, List<Node>> tree = new TreeMap<Node, List<Node>>();
         opList1.stream().filter(n -> n.getParent() != null).forEachOrdered(n -> {
             if (!tree.containsKey(n.getParent())) tree.put(n.getParent(), new ArrayList<>());
