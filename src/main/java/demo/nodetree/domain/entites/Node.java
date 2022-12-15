@@ -54,12 +54,24 @@ class Node implements Comparable<Node> {
 
     }
 
-
-
     @Override
     public String toString() {
-        return this.getClass().getSimpleName() + "-" + getId();
+        return "{" +
+                "id:" + id +
+                ", name:'" + name + '\'' +
+                ", height:" + height +
+                ", root_id:" + root_id +
+                ", childs:" + childs +
+                '}';
     }
+
+
+/*
+    @Override
+    public String toString() {
+        return this.getClass().getSimpleName() + "-" + getId() +"-" +getName() +"-"+ getChilds() ;
+    }
+*/
 
 
     @Override

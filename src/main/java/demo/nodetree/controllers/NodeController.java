@@ -59,11 +59,11 @@ public class NodeController {
         for (Map.Entry<Node, List<Node>> elem : tree.entrySet()) {
 
             if (elem.getKey().getId() == id || opList.contains(elem.getKey())) {
-                for (Node node : elem.getValue()) {
+                elem.getValue().forEach(node -> {
                     System.out.println(node + "  ::::::::::::::::::::::::::::::::::::::::::");
                     System.out.println(elem.getKey() + " %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
                     System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++");
-                }
+                });
                 System.out.println("---------------------------------------------------\n");
                 opList.addAll(elem.getValue());
             }
